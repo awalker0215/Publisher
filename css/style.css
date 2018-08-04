@@ -64,3 +64,10 @@
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
+.footerArea {
+	box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+	
+}
