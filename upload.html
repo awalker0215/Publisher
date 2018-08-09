@@ -52,20 +52,41 @@
 	  </div> 
   </div>
   <div class="row">
-    <div class="text-center col-md-6">
+    <div class="text-center col-md-12">
 	  <h4>出版品</h4>
-	  <div class="">
-		  	<label class="checkarea">電子書
-			  <input type="checkbox" checked="checked">
-			  <span class="checkmark"></span>
+	  <div class="col-md-12">
+		  <h5>檔案基本資料</h5>
+		  <div class="text-center form-group">
+		  	<label>檔案名稱
+			  <input type="text" class="form-control">
 			</label>
-			<label class="checkarea">期刊
-			  <input type="checkbox">
-			  <span class="checkmark"></span>
+			<label>作者
+			  <input type="text" class="form-control">
 			</label>
+			<label>出版日期
+			  <input type="date" class="form-control">
+			</label>
+		  </div>
+		  <div>
+		  
+		  <h5>是否授權</h5>
+		    <label class="checkarea">是
+			  <input type="radio" checked="checked" name="radio">
+			  <span class="checkradio"></span>
+			</label>
+		      <p>費用</p>
+			  <input type="text" placeholder="free" class="form-control col-md-12">
+			<label class="checkarea">否
+			  <input type="radio" name="radio">
+			  <span class="checkradio"></span>
+			</label>
+		  </div>
 	  </div>
     </div>
-	<div class="text-center col-md-6">
+  </div>	
+  <hr>
+  <div>
+	<div class="text-center col-md-12">
 		<h4>類型</h4>
 		<div class="">
 		  	<label class="checkarea">食
