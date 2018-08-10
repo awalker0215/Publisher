@@ -55,18 +55,52 @@
     <div class="text-center col-md-12">
 	  <h4>出版品</h4>
 	  <div class="row col-md-12">
-		  <h5>檔案基本資料</h5>
-		  <div class="text-center form-group">
-		  	<label>檔案名稱
-			  <input type="text" class="form-control">
+		  <div class="text-center form-control">
+		  <h5>檔案格式</h5>
+		    <label class="checkarea">全文電子檔
+			<input type="radio" checked="checked" name="RadioForFile">
+			<span class="checkradio"></span>
 			</label>
-			<label>作者
-			  <input type="text" class="form-control">
+			<label class="checkarea">附錄電子檔
+			  <input type="radio" name="RadioForFile">
+			  <span class="checkradio"></span>
 			</label>
-			<label>出版日期
-			  <input type="date" class="form-control">
-			</label>
+			<div>
+				<label class="checkarea">其他
+				  <input type="radio" name="RadioForFile">
+				  <span class="checkradio"></span>
+				</label>
+				<div class="form-group row">
+					<label class="col-sm-4 col-form-label">原文位址</label>
+					<div class="col-sm-8">
+					  <input type="text" class="form-control" id="" placeholder="http://">
+					</div>
+					<label class="col-sm-4 col-form-label">檔名</label>
+					<div class="col-sm-8">
+					  <input type="text" class="form-control" id="" placeholder="檔案名稱">
+					</div>
+			  	</div>
+			</div>
 		  </div>
+	  </div>
+	  <div class="row col-md-12 text-center">
+		  <h5>檔案基本資料</h5>
+		  
+		  <div class="form-group row">
+			<label class="col-sm-4 col-form-label">檔案名稱</label>
+			<div class="col-sm-8">
+				<input type="text" class="form-control" id="" placeholder="">
+			</div>
+			<label class="col-sm-4 col-form-label">作者</label>
+			<div class="col-sm-8">
+				<input type="text" class="form-control" id="" placeholder="檔案名稱">
+			</div>
+			<label class="col-sm-4 col-form-label">出版日期</label>
+			<div class="col-sm-8">
+				<input type="date" class="form-control" id="" placeholder="檔案名稱">
+			</div>
+		  </div>
+		 
 	  </div>
 	  <div class="row col-md-12">
 		  <div class="text-center form-control">
@@ -78,7 +112,15 @@
 			  <div class="form-group row">
 				<label class="col-sm-3 col-form-label">費用</label>
 				<div class="col-sm-8">
-				  <input type="text" class="form-control" id="#" placeholder="free">
+				  	<div class="input-group number-spinner">
+						<span class="input-group-btn">
+							<button class="btn btn-default" data-dir="dwn"><strong>-</strong></button>
+						</span>
+						<input type="text" class="form-control text-center" value="0">
+						<span class="input-group-btn">
+							<button class="btn btn-default" data-dir="up"><strong>+</strong></button>
+						</span>
+					</div>
 				</div>
 			  </div>
 			<label class="checkarea">否
@@ -89,7 +131,6 @@
 	  </div>
     </div>
   </div>	
-  <hr>
   <div>
 	<div class="text-center col-md-12">
 		<h4>類型</h4>
@@ -121,12 +162,23 @@
 		</div>
 	</div>
   </div>
+  <hr>
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <h5>標籤</h5>
+      <div class="form-group row">
+		<label class="col-sm-12 col-form-label">為您的文章定義一些標籤</label>
+		<div class="col-sm-12">
+			<textarea class="form-control"></textarea>
+		</div>
+	  </div>
+    </div>
+  </div>
   <div class="row">
     <div class="col-sm-12 text-center">
       <button type="button" class="btn btn-info btn-sm">發布</button>
       <!-- <button type="button" class="btn btn-success btn-sm"></button> -->
     </div>
-
   </div>
   <hr>
 
@@ -142,5 +194,6 @@
 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="js/bootstrap.js"></script>
+<script src="js/frontEnd.js"></script>
 </body>
 </html>
