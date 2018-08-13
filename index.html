@@ -4,8 +4,9 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Publisher</title>
+<title>Bootstrap - Prebuilt Layout</title>
 
+<!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 
@@ -35,59 +36,36 @@
 </nav>
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-6 col-md-offset-3">
+    <div class="col-md-12 col-md-offset-3">
       <h1 class="text-center">Web for Publisher</h1>
     </div>
   </div>
   <hr>
 </div>
 <div class="container">
-  <h3>單位列表</h3>
+  <div class="row text-center">
+    <div class="col-md-12 col-md-offset-3">
+		<h3>地方署</h3>
+	</div>
+  </div>
+  <hr>
   <div class="row">
-    <div class="text-center col-md-12">
-        <table class="table">
-		  <thead class="thead-dark">
-			<tr>
-			  <th scope="col">#</th>
-			  <th scope="col">單位名稱</th>
-			  <th scope="col">設立年代</th>
-			  <th scope="col">電話</th>
-			  <th scope="col">地址</th>
-			  <th scope="col">網址</th>
-			  <th scope="col">檔案數</th>
-			</tr>
-		  </thead>
-		  <tbody>
-			<tr>
-			  <th scope="row">1</th>
-			  <td>地方署</td>
-			  <td>1985</td>
-			  <td>069-1234567</td>
-			  <td>澎湖縣馬公市XX路XXX號</td>
-			  <td><a href="http://googole.com">link</a></td>
-			  <td>2</td>
-			</tr>
-			<tr>
-			  <th scope="row">2</th>
-			  <td>地方署</td>
-			  <td>1985</td>
-			  <td>069-1234567</td>
-			  <td>澎湖縣馬公市XX路XXX號</td>
-			  <td><a href="http://googole.com">link</a></td>
-			  <td>5</td>
-			</tr>
-			<tr>
-			  <th scope="row">3</th>
-			  <td>地方署</td>
-			  <td>1985</td>
-			  <td>069-1234567</td>
-			  <td>澎湖縣馬公市XX路XXX號</td>
-			  <td><a href="http://googole.com">link</a></td>
-			  <td>1</td>
-			</tr>
-		  </tbody>
-		</table>
-    </div>
+    <div class="text-center col-sm-4"> 
+		<div>
+			<p>您目前已上傳<h4>5</h4>個檔案</p>
+		</div>
+		<button class="btn btn-info">上傳檔案</button>
+	</div>
+    <div class="col-sm-4 text-center"> 
+		<h5>基本資料</h5>
+		<div class="text-justify">
+			<p><strong>設立年代</strong>&nbsp;1995</p>
+			<p><strong>電話</strong>&nbsp;069-12345678</p>
+			<p><strong>地址</strong>&nbsp;澎湖縣馬公市XX路XXX號</p>
+			<p><strong>網址</strong>&nbsp;<a href="http://google.com">link</a></p>
+		</div>
+	</div>
+    <div class="col-sm-4 text-justify"> You can <strong>offset a column</strong> using the handle on the left. Drag it to increase or reduce the offset. </div>
   </div>
   <hr>
   <div class="row">
