@@ -14,3 +14,17 @@ $(document).on('click', '.number-spinner button', function () {
 	}
 	btn.closest('.number-spinner').find('input').val(newVal);
 });
+
+$('#other').change( function () {
+	if ($(this).is(':checked'))
+    {
+       $("#otherURL").removeAttr("disabled"); 
+        $("#otherFileName").removeAttr("disabled"); 
+    }
+    //If checkbox is unchecked then disable or enable input
+    else
+    {
+		$("#otherURL").attr("disabled","disabled");
+        $("#otherFileName").attr("disabled","disabled");
+    }
+});
