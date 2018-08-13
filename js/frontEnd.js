@@ -21,10 +21,18 @@ $('#other').change( function () {
        $("#otherURL").removeAttr("disabled"); 
         $("#otherFileName").removeAttr("disabled"); 
     }
-    //If checkbox is unchecked then disable or enable input
-    else
+});
+$('#content').change( function () {
+	if ($(this).is(':checked'))
     {
-		$("#otherURL").attr("disabled","disabled");
+       $("#otherURL").attr("disabled","disabled");
+        $("#otherFileName").attr("disabled","disabled");
+    }
+});
+$('#appendix').change( function () {
+	if ($(this).is(':checked'))
+    {
+       $("#otherURL").attr("disabled","disabled");
         $("#otherFileName").attr("disabled","disabled");
     }
 });
