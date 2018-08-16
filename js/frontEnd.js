@@ -21,6 +21,7 @@ $('#other').change( function () {
 		$("#inputOther").attr('style','display:block');
 		$("#inputContent").attr('style','display:none');
 		$("#inputAppendix").attr('style','display:none');
+		$("#publicationDetail").attr('style','display:none');
     }
 });
 $('#content').change( function () {
@@ -29,6 +30,7 @@ $('#content').change( function () {
 		$("#inputOther").attr('style','display:none');
 		$("#inputContent").attr('style','display:block');
 		$("#inputAppendix").attr('style','display:none');
+		$("#publicationDetail").attr('style','display:block');
 	}
 });
 $('#appendix').change( function () {
@@ -37,5 +39,15 @@ $('#appendix').change( function () {
        	$("#inputOther").attr('style','display:none');
 		$("#inputContent").attr('style','display:none');
 		$("#inputAppendix").attr('style','display:block');
+		$("#publicationDetail").attr('style','display:block');
+    }
+});
+$('#paper').change( function () {
+	if ($(this).is(':checked'))
+    {
+       	$("#inputOther").attr('style','display:none');
+		$("#inputContent").attr('style','display:none');
+		$("#inputAppendix").attr('style','display:none');
+		$("#publicationDetail").attr('style','display:block');
     }
 });

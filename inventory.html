@@ -41,7 +41,37 @@
   </div>
   <hr>
 </div>
+
+<!-- admin 顯示區塊 -->
+<div class="container col-md-6" id="unitDetail">
+  <div class="row text-center">
+    <div class="col-md-12 col-md-offset-3">
+		<h3>單位A</h3>
+	</div>
+  </div>
+  <hr>
+  <div class="row col-md-12">
+    <div class="col-sm-6 text-center"> 
+		<h5>基本資料</h5>
+		<div class="text-justify">
+			<p><strong>設立年代</strong>&nbsp;1995</p>
+			<p><strong>聯絡人</strong>&nbsp;王大明</p>
+			<p><strong>電話</strong>&nbsp;06-9876630</p>
+			<p><strong>地址</strong>&nbsp;澎湖縣馬公市XX路XXX號</p>
+			<p><strong>網址</strong>&nbsp;<a href="http://google.com">www.xxx.gov.tw</a></p>
+		</div>
+	</div>
+	<div class="text-center col-sm-6"> 
+		<div>
+			<p>您有<h4>5</h4>個文化檔案</p>
+		</div>
+	  <button class="btn btn-info" onclick="location.href='inventory.html'">檔案列表</button>
+	  <button class="btn btn-info" onclick="location.href='upload.html'">新增資料</button>
+	</div>
+  </div>
+</div>
 <div class="container">
+  <hr>
   <h3>上傳檔案列表</h3>
   <div class="row">
     <div class="text-center col-md-12">
@@ -49,57 +79,50 @@
 		  <thead class="thead-dark">
 			<tr>
 			  <th scope="col">#</th>
-			  <th scope="col">單位名稱</th>
-			  <th scope="col">檔案格式</th>
-			  <th scope="col">上傳檔案</th>
-			  <th scope="col">檔案名稱</th>
-			  <th scope="col">作者</th>
-			  <th scope="col">出版日期</th>
-			  <th scope="col">授權</th>
-			  <th scope="col">費用</th>
+			  <th scope="col">出版品型態</th>
+			  <th scope="col">描述</th>
+			  <th scope="col">出版品名</th>
+			  <th scope="col">作者/編者</th>
+			  <th scope="col">出版年</th>
 			  <th scope="col">類型</th>
 			  <th scope="col">標籤</th>
+			  <th scope="col">上傳日期</th>
+			  <th scope="col">檔案下載</th>
 			</tr>
 		  </thead>
 		  <tbody>
 			<tr>
 			  <th scope="row">1</th>
-			  <td>單位A</td>
-			  <td>PDF</td>
-			  <td>File path</td>
-			  <td>introduce.pdf</td>
+			  <td>全文電子檔</td>
+			  <td>闡述文化內容</td>
+			  <td>澎湖文化</td>
 			  <td>王大明</td>
-			  <td>2018/01/05</td>
-			  <td>是</td>
-			  <td>0</td>
+			  <td>2015</td>
 			  <td>食,住</td>
 			  <td>#抱礅#海#石滬</td>
+			  <td><a href="#">下載</a></td>
 			</tr>
 			<tr>
 			  <th scope="row">2</th>
-			  <td>單位A</td>
-			  <td>PDF</td>
-			  <td>File path</td>
-			  <td>introduce.pdf</td>
+			  <td>全文電子檔</td>
+			  <td>闡述文化內容</td>
+			  <td>澎湖文化</td>
 			  <td>王大明</td>
-			  <td>2018/01/05</td>
-			  <td>是</td>
-			  <td>0</td>
+			  <td>2015</td>
 			  <td>食,住</td>
-			  <td>#花火節#夜釣小管</td>
+			  <td>#抱礅#海#石滬</td>
+			  <td><a href="#">下載</a></td>
 			</tr>
 			<tr>
 			  <th scope="row">3</th>
-			  <td>單位A</td>
-			  <td>PDF</td>
-			  <td>File path</td>
-			  <td>introduce.pdf</td>
+			  <td>全文電子檔</td>
+			  <td>闡述文化內容</td>
+			  <td>澎湖文化</td>
 			  <td>王大明</td>
-			  <td>2018/01/05</td>
-			  <td>是</td>
-			  <td>0</td>
+			  <td>2015</td>
 			  <td>食,住</td>
-			  <td>#北環#跨海大橋#風車</td>
+			  <td>#抱礅#海#石滬</td>
+			  <td><a href="#">下載</a></td>
 			</tr>
 		  </tbody>
 		</table>
