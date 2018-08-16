@@ -108,6 +108,19 @@
 	background: white;
 }
 
+/* For dispaly hidden */
+.hiddenArea {
+	display: none;
+}
+
+.showArea {
+	display: block;
+}
+
+.fineTuneInput {
+	padding-left: 5%;
+}
+
 .footerArea {
 	box-sizing: border-box;
     position: absolute;

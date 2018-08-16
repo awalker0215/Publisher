@@ -18,21 +18,24 @@ $(document).on('click', '.number-spinner button', function () {
 $('#other').change( function () {
 	if ($(this).is(':checked'))
     {
-       $("#otherURL").removeAttr("disabled"); 
-        $("#otherFileName").removeAttr("disabled"); 
+		$("#inputOther").attr('style','display:block');
+		$("#inputContent").attr('style','display:none');
+		$("#inputAppendix").attr('style','display:none');
     }
 });
 $('#content').change( function () {
 	if ($(this).is(':checked'))
     {
-       $("#otherURL").attr("disabled","disabled");
-        $("#otherFileName").attr("disabled","disabled");
-    }
+		$("#inputOther").attr('style','display:none');
+		$("#inputContent").attr('style','display:block');
+		$("#inputAppendix").attr('style','display:none');
+	}
 });
 $('#appendix').change( function () {
 	if ($(this).is(':checked'))
     {
-       $("#otherURL").attr("disabled","disabled");
-        $("#otherFileName").attr("disabled","disabled");
+       	$("#inputOther").attr('style','display:none');
+		$("#inputContent").attr('style','display:none');
+		$("#inputAppendix").attr('style','display:block');
     }
 });
