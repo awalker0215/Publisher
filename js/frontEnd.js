@@ -22,6 +22,7 @@ $('#other').change( function () {
 		$("#inputContent").attr('style','display:none');
 		$("#inputAppendix").attr('style','display:none');
 		$("#inputEbookURL").attr('style','display:none');
+		$("#inputDiskURL").attr('style','display:none');
 		$("#publicationDetail").attr('style','display:none');
     }
 });
@@ -32,6 +33,7 @@ $('#content').change( function () {
 		$("#inputContent").attr('style','display:block');
 		$("#inputAppendix").attr('style','display:none');
 		$("#inputEbookURL").attr('style','display:none');
+		$("#inputDiskURL").attr('style','display:none');
 		$("#publicationDetail").attr('style','display:block');
 	}
 });
@@ -42,6 +44,7 @@ $('#appendix').change( function () {
 		$("#inputContent").attr('style','display:none');
 		$("#inputAppendix").attr('style','display:block');
 		$("#inputEbookURL").attr('style','display:none');
+		$("#inputDiskURL").attr('style','display:none');
 		$("#publicationDetail").attr('style','display:block');
     }
 });
@@ -52,6 +55,7 @@ $('#paper').change( function () {
 		$("#inputContent").attr('style','display:none');
 		$("#inputAppendix").attr('style','display:none');
 		$("#inputEbookURL").attr('style','display:none');
+		$("#inputDiskURL").attr('style','display:none');
 		$("#publicationDetail").attr('style','display:block');
     }
 });
@@ -62,6 +66,18 @@ $('#Ebook').change( function () {
 		$("#inputContent").attr('style','display:none');
 		$("#inputAppendix").attr('style','display:none');
 		$("#inputEbookURL").attr('style','display:block');
+		$("#inputDiskURL").attr('style','display:none');
+		$("#publicationDetail").attr('style','display:block');
+    }
+});
+$('#disk').change( function () {
+	if ($(this).is(':checked'))
+    {
+		$("#inputOther").attr('style','display:none');
+		$("#inputContent").attr('style','display:none');
+		$("#inputAppendix").attr('style','display:none');
+		$("#inputEbookURL").attr('style','display:none');
+		$("#inputDiskURL").attr('style','display:block');
 		$("#publicationDetail").attr('style','display:block');
     }
 });
