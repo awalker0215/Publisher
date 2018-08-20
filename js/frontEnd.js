@@ -21,6 +21,7 @@ $('#other').change( function () {
 		$("#inputOther").attr('style','display:block');
 		$("#inputContent").attr('style','display:none');
 		$("#inputAppendix").attr('style','display:none');
+		$("#inputEbookURL").attr('style','display:none');
 		$("#publicationDetail").attr('style','display:none');
     }
 });
@@ -30,6 +31,7 @@ $('#content').change( function () {
 		$("#inputOther").attr('style','display:none');
 		$("#inputContent").attr('style','display:block');
 		$("#inputAppendix").attr('style','display:none');
+		$("#inputEbookURL").attr('style','display:none');
 		$("#publicationDetail").attr('style','display:block');
 	}
 });
@@ -39,6 +41,7 @@ $('#appendix').change( function () {
        	$("#inputOther").attr('style','display:none');
 		$("#inputContent").attr('style','display:none');
 		$("#inputAppendix").attr('style','display:block');
+		$("#inputEbookURL").attr('style','display:none');
 		$("#publicationDetail").attr('style','display:block');
     }
 });
@@ -48,6 +51,31 @@ $('#paper').change( function () {
        	$("#inputOther").attr('style','display:none');
 		$("#inputContent").attr('style','display:none');
 		$("#inputAppendix").attr('style','display:none');
+		$("#inputEbookURL").attr('style','display:none');
 		$("#publicationDetail").attr('style','display:block');
     }
 });
+$('#Ebook').change( function () {
+	if ($(this).is(':checked'))
+    {
+		$("#inputOther").attr('style','display:none');
+		$("#inputContent").attr('style','display:none');
+		$("#inputAppendix").attr('style','display:none');
+		$("#inputEbookURL").attr('style','display:block');
+		$("#publicationDetail").attr('style','display:block');
+    }
+});
+
+var startDate = new Date();
+
+$('#datepicker').datepicker({
+    autoclose: true,
+    minViewMode: 1,
+    format: 'yyyy年 mm月'
+}).on('changeDate', function(selected){
+        startDate = new Date(selected.date.valueOf());
+        startDate.setDate(startDate.getDate(new Date(selected.date.valueOf())));
+    }); 
+
+
+
