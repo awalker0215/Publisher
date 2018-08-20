@@ -121,6 +121,10 @@
 	padding-left: 5%;
 }
 
+.fineTuneTopInput {
+	margin: 5px 0px;
+}
+
 .footerArea {
 	box-sizing: border-box;
     position: absolute;
