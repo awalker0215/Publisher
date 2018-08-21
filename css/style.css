@@ -1,5 +1,28 @@
 @charset "utf-8";
 /* CSS Document */
+
+/* Color */
+.co-yellow-light {
+	background-color: #f3cd05;
+}
+
+.co-yellow {
+	background-color: #f49f05;
+}
+
+.co-orange {
+	background-color: #f18904;
+}
+
+.co-orange-dark {
+	background-color: #bda589;
+}
+
+.co-blue {
+	background-color: #36688D;
+	color: #FFFFFF;
+}
+
 /* The checkarea */
 .checkarea {
     display: block;
