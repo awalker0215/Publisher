@@ -44,6 +44,10 @@
 	font-family: 'Noto Sans TC', sans-serif;
 }
 
+.font-bigger {
+    font-size: 1.2em;
+}
+
 /* The checkarea */
 .checkarea {
     display: block;
